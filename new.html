@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu ="return false">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/favicon1.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/partnerShip.css">
+  <link rel="stylesheet" href="/thriveCoder.css">
+  <title>Lets Become Partners</title>
+</head>
+<!-- <style>
+</style> -->
+
+<body id="partnership">
+  <div class="hamburger-Menu">
+    <ul class="navList">
+      <!-- editis changing IDs, Serial was: 6, 1, 4, 2, 6, 3, 9, 9 -->
+      <li class="navItems" id="navItem1"> <a href="/index.html"> Home</a></li>
+      <li class="navItems" id="navItem2"> <a href="/about-us.html"> About </a></li>
+      <li class="navItems" id="navItem3"> <a href="/aboutproducts.html"> Products</a></li>
+      <li class="navItems" id="navItem4"> <a href="/merch.html">Merch</a></li>
+      <li class="navItems" id="navItem5"> <a href="/new.html">Partnership</a></li>
+      <li class="navItems" id="navItem6"> <a href="/press.html">Why <span class="lower-case">u</span>s</a></li>
+      <li class="navItems" id="navItem7"> <a href="/contact.html">Contact</a></li>
+      <li class="navItems" id="navItem8"> <a href="/terms.html">Terms</a></li>
+    </ul>
+    <img src="/assets/pngegg.png" alt="" class="close-Icon">
+  </div>
+  <div class="navIcons">
+
+    <div class="hamburger">
+      <img src="/assets/menu-edited.png" alt="Hamburger Icon" id="hamburger-Image" />
+    </div>
+  </div>
+  <div class="bgContainer"> </div>
+  <div class="outerContainer">
+    <div class="container">
+      <div class="pageTwo">
+        <img src="/assets/wholesale1.png" alt="" class="wholesale">
+        <img src="/assets/WHITE titles new/9.png" alt="" class="wholesaleMob">
+        <p class="para paraOne"><span class="pad50">
+            If you’d like to become our partner, purchase from us at wholesale
+            prices, re-sell, or distribute our exquisite products, or become a
+            Franchise owner please send us an enquiry and schedule a call with
+            one of our sales managers.
+
+            We’re always open to new partnerships and opportunities, however we
+            do get approached A LOT, so we’ve developed a simple process to
+            identify if we may be a good fit, then set you up as a partner.
+            <br /><br /></span>
+          <span>
+            <span class="marked"> PLEASE NOTE: </span> <br> We are a wholesale company and the minimum order
+            quantity for our wholesale program varies per product. - This
+            website is not a retail store. Please contact us for detailed
+            products description, FDA certificates, lists of ingredients and
+            price.
+
+            To start, please send us an inquiry mail and request our application questionnaire so we can better
+            understand you, your business, and what type of partnership you have in mind. We'll review your answers,
+            then be in touch to let you know. <br /><br />
+          </span>
+        </p>
+
+      </div>
+      <div class="headerContainer">
+        <img src="/assets/partners names/1edited.png" alt="" class="partnerHeader" />
+      </div>
+      <div class="outerGrid">
+        <div class="outer">
+          <div class="grid">
+            <img src="/assets/partners names/ducros.00.png" alt="" class="partnerImg" id="partnerImg1" />
+            <img src="/assets/partners names/3edited.png" alt="" class="partnerImg" id="partnerImg2" />
+            <img src="/assets/partners names/4edited.png" alt="" class="partnerImg" id="partnerImg3" />
+            <img src="/assets/partners names/5edited.png" alt="" class="partnerImg" id="partnerImg4" />
+            <img src="/assets/partners names/6edited.png" alt="" class="partnerImg" id="partnerImg5" />
+            <img src="/assets/partners names/7edited.png" alt="" class="partnerImg" id="partnerImg6" />
+            <img src="/assets/partners names/8edited.png" alt="" class="partnerImg" id="partnerImg7" />
+            <img src="/assets/partners names/9edited.png" alt="" class="partnerImg" id="partnerImg8" />
+            <img src="/assets/partners names/10edited.png" alt="" class="partnerImg" id="partnerImg9" />
+
+          </div>
+          <button id="scroll"><img src="/assets/rightIcon2.png" alt="" /></button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <script>
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      const hamburger = document.querySelector(".hamburger");
+            const hamburgerMenu = document.querySelector(".hamburger-Menu")
+            const closeIcon = document.querySelector(".close-Icon")
+            hamburger.addEventListener("click", () => {
+                hamburgerMenu.style.left = "0";
+                hamburgerMenu.style.height = "100vh";
+            })
+            closeIcon.addEventListener("click", () => {
+                hamburgerMenu.style.height = "0vw";
+                hamburgerMenu.style.left = "-100vw";
+            })
+
+
+      const scroll = document.querySelector("#scroll");
+      const grid = document.querySelector(".grid");
+      scroll.addEventListener("mouseover", () => {
+        grid.style.animationPlayState = "running";
+      });
+      scroll.addEventListener("mouseout", () => {
+        grid.style.animationPlayState = "paused";
+      });
+
+
+
+      const paraOne = document.querySelector(".paraOne");
+      const wholesale = document.querySelector(".wholesaleMob");
+      setTimeout(() => {
+        wholesale.style.opacity = "1"
+      }, 500);
+      setTimeout(() => {
+        paraOne.style.opacity = "1"
+      }, 1200);
+    }
+    if (window.matchMedia("(max-width: 768px)").matches) {
+
+
+      const paraOne = document.querySelector(".paraOne");
+      const wholesale = document.querySelector(".wholesaleMob");
+      setTimeout(() => {
+        wholesale.style.opacity = "1"
+      }, 500);
+      setTimeout(() => {
+        paraOne.style.opacity = "1"
+      }, 1200);
+
+
+
+      const scroll = document.querySelector("#scroll");
+      const grid = document.querySelector(".grid");
+      scroll.addEventListener("mouseover", () => {
+        grid.style.animationPlayState = "running";
+      });
+      scroll.addEventListener("mouseout", () => {
+        grid.style.animationPlayState = "paused";
+      });
+
+
+
+      const closeIcon2 = document.querySelector(".close-Icon2")
+            const closeIcon = document.querySelector(".close-Icon")
+            const otherBurger = document.querySelector(".hamburger");
+            const otherMenu = document.querySelector(".hamburger-Menu")
+
+            otherBurger.addEventListener("click", () => {
+                otherMenu.style.left = "0vw";
+            })
+            closeIcon.addEventListener("click", () => {
+                otherMenu.style.left = "-100vw";
+            })
+
+    } 
+  </script>
+</body>
+
+</html>
